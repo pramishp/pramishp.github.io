@@ -12,4 +12,4 @@ A place to include any other types of information that you'd like to include abo
 
 ### Contact me
 
-[pramish.paudel123@gmail.com](mailto:pramish.paudel123@gmail.com)
+[//]: # ([pramish.paudel@gmail.com]&#40;mailto:pramish.paudel123@gmail.com&#41;)
