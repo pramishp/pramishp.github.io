@@ -1,18 +1,157 @@
----
-layout: default
----
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
+    <title>Pramish Paudel</title>
 
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+    <meta name="author" content="Pramish Paudel">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
 
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
+  </head>
 
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
-</div>
+  <body>
+    <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+      <tr style="padding:0px">
+        <td style="padding:0px">
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr style="padding:0px">
+              <td style="padding:2.5%;width:63%;vertical-align:middle">
+                <p class="name" style="text-align: center;">
+                  Pramish Paudel
+                </p>
+                <p>I recently completed my under-graduate at Pulchowk Campus, IOE, Tribhuwan University, majoring in Computer Engineering.
+
+                </p>
+                <p>
+
+                </p>
+                <p style="text-align:center">
+                  Email: pramish[dot]paudel[at]gmail[dot]com &nbsp;/&nbsp;
+                  <a href="data/PramishPaudel-CV.pdf">CV</a> &nbsp;/&nbsp;
+                  <a href="data/PramishPaudel-bio.txt">Bio</a> &nbsp;/&nbsp;
+                  <a href="https://scholar.google.com/citations?hl=en&user=jktWnL8AAAAJ">Scholar</a> &nbsp;/&nbsp;
+<!--                  <a href="https://twitter.com/jon_barron">Twitter</a> &nbsp;/&nbsp;-->
+                  <a href="https://github.com/pramishp/">Github</a>
+                </p>
+              </td>
+              <td style="padding:2.5%;width:40%;max-width:40%">
+                <a href="images/PramishPaudel.jpg"><img style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;" alt="profile photo" src="images/PramishPaudel.jpg" class="hoverZoomLink"></a>
+              </td>
+            </tr>
+          </tbody></table>
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+              <tr>
+              <td style="padding:20px;width:100%;vertical-align:middle">
+                <h2>Research</h2>
+                <p>
+<!--                  I'm interested in computer vision, deep learning, generative AI, and image processing. Most of my research is about inferring the physical world (shape, motion, color, light, etc) from images, usually with radiance fields. Some papers are <span class="highlight">highlighted</span>.-->
+                </p>
+              </td>
+            </tr>
+          </tbody></table>
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+
+    <tr onmouseout="nuvo_stop()" onmouseover="nuvo_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='nuvo_image'><video  width=100% muted autoplay loop>
+          <source src="images/nuvo.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='images/nuvo.jpg' width=100%>
+        </div>
+        <script type="text/javascript">
+          function nuvo_start() {
+            document.getElementById('nuvo_image').style.opacity = "1";
+          }
+
+          function nuvo_stop() {
+            document.getElementById('nuvo_image').style.opacity = "0";
+          }
+          nuvo_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="iHuman/index.html">
+          <span class="papertitle">iHuman: Instant Animatable Digital Humans From Monocular Videos</span>
+        </a>
+        <br>
+        <a href="https://pramishp.github.io/"> <strong>Pramish Paudel</strong></a>,
+        <a href="iHuman/index.html">Anubhav Khanal</a>,
+        <a href="https://ajadchhatkuli.github.io">Ajad Chhatkuli</a>,
+       Danda Pani Paudel,
+        Jyoti Tandukar
+        <br>
+        <em>ECCV</em>, 2024
+        <br>
+        <a href="iHuman/index.html">project page</a>
+        /
+        <a href="https://youtu.be/W5xG2GYfUM0">video</a>
+        /
+        <a href="http://arxiv.org/abs/*">arXiv</a>
+        <p></p>
+        <p>
+        Neural fields let you recover editable UV mappings for the challenging geometries produced by NeRF-like models.
+        </p>
+      </td>
+    </tr>
+
+          </tbody></table>
+
+
+<!--          <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>-->
+<!--            <tr>-->
+<!--              <td>-->
+<!--                <h2>Awards</h2>-->
+<!--              </td>-->
+<!--            </tr>-->
+<!--          </tbody></table>-->
+<!--          <table width="100%" align="center" border="0" cellpadding="20"><tbody>-->
+
+<!--            <tr>-->
+<!--              <td style="padding:20px;width:25%;vertical-align:middle"><img src="images/cvf.jpg"></td>-->
+<!--              <td width="75%" valign="center">-->
+<!--                <a href="https://cvpr.thecvf.com/Conferences/2024/Organizers">Area Chair, CVPR 2024</a>-->
+<!--                <br>-->
+<!--                <a href="https://cvpr2023.thecvf.com/Conferences/2023/Organizers">Demo Chair, CVPR 2023</a>-->
+<!--                <br>-->
+<!--                <a href="https://cvpr2022.thecvf.com/area-chairs">Area Chair, CVPR 2022</a>-->
+<!--                <br>-->
+<!--                <a href="http://cvpr2021.thecvf.com/area-chairs">Area Chair & Award Committee Member, CVPR 2021</a>-->
+<!--                <br>-->
+<!--                <a href="http://cvpr2019.thecvf.com/area_chairs">Area Chair, CVPR 2019</a>-->
+<!--                <br>-->
+<!--                <a href="http://cvpr2018.thecvf.com/organizers/area_chairs">Area Chair, CVPR 2018</a>-->
+<!--              </td>-->
+<!--            </tr>-->
+
+<!--            <tr>-->
+<!--              <td align="center" style="padding:20px;width:25%;vertical-align:middle">-->
+<!--                <h2>Basically <br> Blog Posts</h2>-->
+<!--              </td>-->
+<!--              <td width="75%" valign="middle">-->
+<!--                <a href="https://jonbarron.info/data/cvpr2023_llm_workshop_annotated.pdf">Scholars & Big Models: How Can Academics Adapt?</a>-->
+<!--              </td>-->
+<!--            </tr>-->
+
+
+          </tbody></table>
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+              <td style="padding:0px">
+                <br>
+                <p style="text-align:right;font-size:small;">
+                 The template is borrowed from <a href="https://github.com/jonbarron/jonbarron_website">John Barron</a>
+                </p>
+              </td>
+            </tr>
+          </tbody></table>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
