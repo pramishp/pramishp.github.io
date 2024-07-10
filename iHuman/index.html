@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>iHuman: Instant Animatable Digital Humans From Monocular Videos</title>
+    <!-- Bootstrap -->
+    <link href="./static/css/bootstrap-4.4.1.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <!-- <link rel="stylesheet" href="./static/css/fontawesome.all.min.css"> -->
+    <link rel="icon" href="./static/images/1f47b.png">
+    <!-- <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,800italic,400,700,800' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/project.css" media="screen" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/iconize.css" />
+    <script src="js/google-code-prettify/prettify.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./static/js/bulma-carousel.min.js"></script>
+    <script src="./static/js/bulma-slider.min.js"></script>
+    <script src="./static/js/index.js"></script>
+</head>
+
+<!-- cover -->
+<body>
+<section>
+    <div class="jumbotron text-center mt-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2>iHuman: Instant Animatable Digital Humans From Monocular Videos</h2>
+                    <h4 style="color:#5a6268;">ECCV 2024</h4>
+                    <hr>
+                    <h6>
+                        <a href="https://pramishp.github.io/" target="_blank">Pramish Paudel</a><sup>1</sup>,
+                        Anubhav Khanal<sup>1</sup>,
+                        Ajad Chhatkuli<sup>2,</sup><sup>3</sup>,
+                        Danda Pani Paudel<sup>2,</sup><sup>3</sup>,
+                        Jyoti Tandukar<sup>1</sup>,
+                        <p>
+                            <sup>1</sup>Pulchowk Campus, IOE, Tribhuvan University &nbsp;&nbsp;
+                            <sup>2</sup>ETH Zurich
+                            <sup>3</sup>NAAMI
+                        </p>
+
+                        <div class="row justify-content-center">
+                            <div class="column">
+                                <p class="mb-5"><a class="btn btn-large btn-light" href="https://arxiv.org/abs/*"
+                                                   role="button" target="_blank">
+                                    <i class="fa fa-file"></i> Paper</a></p>
+                            </div>
+                            <div class="column">
+                                <p class="mb-5"><a class="btn btn-large btn-light" href="index.html" role="button"
+                                                   target="_blank">
+                                    <i class="fab fa-github"></i> Code (Coming Soon) </a></p>
+                            </div>
+                            <div class="column">
+                                <p class="mb-5"><a class="btn btn-large btn-light" href="https://youtu.be/W5xG2GYfUM0"
+                                                   role="button" target="_blank">
+                                    <i class="fab fa-youtube"></i> Video </a></p>
+                            </div>
+                            <!-- <div class="column">
+                                <p class="mb-5"><a class="btn btn-large btn-light" href="dreammat.github.io" role="button" target="_blank">
+                                  <i class="fa fa-database"></i> Model &amp; Dataset </a> </p>
+                            </div> -->
+                        </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- abstract -->
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h3>Abstract</h3>
+                <hr style="margin-top:0px">
+                <h6 style="color:#8899a5"> iHuman can reconstruct human body in motion given video and poses in both 3D
+                    Gaussian Splats and mesh representation. </h6>
+                <!--            <div align="center"> For an unseen objects, we can simply take. </div>-->
+
+                <div class="row" style="margin-bottom:5px">
+                    <div class="col" style="text-align:center">
+                        <img class="thumbnail" src="./static/images/teaser_.png" style="width:70%; margin-bottom:20px">
+                    </div>
+
+                </div>
+                <br>
+
+                <p class="text-left">
+                    Personalized 3D avatars require an animatable representation of digital humans. Doing so instantly
+                    from monocular videos offers scalability to broad class of users and wide-scale applications. In
+                    this paper, we present a fast, simple, yet effective method for creating animatable 3D digital
+                    humans from monocular videos. Our method utilizes the efficiency of Gaussian splatting to model both
+                    3D geometry and appearance. However, we observed that naively optimizing Gaussian splats results in
+                    inaccurate geometry, thereby leading to poor animations.
+                    This work achieves and illustrates the need of accurate 3D mesh-type modelling of the human body for
+                    animatable digitization through Gaussian splats. This is achieved by developing a novel pipeline
+                    that benefits from three key aspects: (a) implicit modelling of surface's displacements and the
+                    color's spherical harmonics; (b) binding of 3D Gaussians to the respective triangular faces of the
+                    body template; (c) a novel technique to render normals followed by their auxiliary supervision. Our
+                    exhaustive experiments on three different benchmark datasets demonstrates the state-of-the-art
+                    results of our method, in limited time settings. In fact, our method is faster by an order of
+                    magnitude (in terms of training time) than its closest competitor. At the same time, we achieve
+                    superior rendering and 3D reconstruction performance under the change of poses.
+                </p>
+            </div>
+        </div>
+        <style>
+            .center-iframe {
+                display: flex;
+                justify-content: center; /* Centers horizontally */
+                align-items: center; /* Centers vertically */
+                height: 70vh; /* Optional: Adjust this value based on your needs */
+            }
+        </style>
+
+        <div class="center-iframe">
+            <iframe width="90%" height="500" src="https://www.youtube.com/embed/W5xG2GYfUM0?si=lrO11B2epOK-reL3"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </div>
+</section>
+<br>
+
+<!-- results -->
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+<!--                <h2>High Fidelity 3D Mesh Reconstruction</h2>-->
+                <hr style="margin-top:0px">
+                 <video width="100%" playsinline="" autoplay="autoplay" loop="loop" preload="" muted="">
+                    <source src="./static/videos/result_on_people_snapshot.mp4" type="video/mp4">
+                </video>
+<!--                <p class="text-center">-->
+<!--                    iHuman produces high fidelity mesh even capturing subtle facial details like hair, ear in 15 seconds of computational budget.-->
+<!--                <p class="text-left">-->
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h2>Comparison of geometric fidelity with other methods</h2>
+                <hr style="margin-top:0px">
+                    <img width="50%" src="./static/images/comparison.png" type="image">
+                <p class="text-center">
+                    Fig: iHuman produces high fidelity mesh even capturing subtle facial details like hair, ear in 15 seconds of computational budget.
+                <p class="text-left">
+            </div>
+        </div>
+    </div>
+</section>
+<br>
+
+<!-- pipeline -->
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h3>Pipeline</h3>
+                <hr style="margin-top:0px">
+                <!--            <div align="center"> For an unseen objects, we can simply take. </div>-->
+
+                <div class="row" style="margin-bottom:5px">
+                    <div class="col" style="text-align:center">
+                        <img class="thumbnail" src="./static/images/architecture.png"
+                             style="width:60%; margin-bottom:20px">
+                    </div>
+
+                </div>
+                <br>
+
+                 <div class="method-description">
+                        <p class="match-description">Our method represents the human body in canonical space with gaussians parameterized by 3D gaussian centers <span class="math">x</span>, rotations <span class="math">q</span>, scales <span class="math">S</span>, opacity <span class="math">α<sub>o</sub></span>, colors <span class="math">SH</span>, skinning weight <span class="math">w</span> and its associated parent triangle <span class="math">i<sub>x</sub></span>. It takes body pose (<span class="math">θ<sub>t</sub></span>) of <span class="math">t<sup>th</sup></span> frame as input and applies forward linear blend skinning to transform <span class="math">v'</span> to posed space <span class="math">v<sub>p</sub></span>. We compute gaussian center <span class="math">x</span> from the posed space vertices <span class="math">v<sub>p</sub></span> of <span class="math">i<sub>x</sub></span>. The normal of parent triangle <span class="math">i<sub>x</sub></span> is encoded to <span class="math">SH<sub>n&#770</sub></span> and rasterized to obtain the normal map <span class="math">I<sub>n&#770</sub></span>. Then, we apply photometric loss and normal map loss to recover both geometry and color. The GT normal map (<span class="math">Ī<sub>n&#770</sub></span>) is obtained from monocular RGB image (<span class="math">I<sub>t</sub></span>) using pix2pixHD <a href="#wang2018high">[Wang et al., 2018]</a> network.</p>
+                    </div>
+            </div>
+        </div>
+    </div>
+</section>
+<br>
+<!-- novel pose -->
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h3>Novel Pose Synthesis</h3>
+                <hr style="margin-top:0px">
+                <!--            <div align="center"> For an unseen objects, we can simply take. </div>-->
+
+                <div class="row" style="margin-bottom:5px">
+                     <video width="100%" playsinline="" autoplay="autoplay" loop="loop" preload="" muted="">
+                    <source src="./static/videos/novel_pose.mp4" type="video/mp4">
+                </video>
+
+                </div>
+                <br>
+            </div>
+        </div>
+    </div>
+</section>
+<br>
+
+<div class="container">
+    <div class="row ">
+        <div class="col-12">
+            <h3>Citation</h3>
+            <hr style="margin-top:0px">
+            <pre style="background-color: #e9eeef;padding: 1.25em 1.5em"><code>@inproceedings{pramishp2024iHuman,
+  title={iHuman: Instant Animatable Digital Humans From Monocular Videos},
+  author={Paudel P, Khanal A, Chhatkuli A, Paudel D, Tandukar J},
+  booktitle={ECCV},
+  year={2024}
+}</code></pre>
+            <hr>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
