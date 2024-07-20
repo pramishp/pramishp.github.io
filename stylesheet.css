@@ -133,3 +133,7 @@ h2 {
 span.highlight {
   background-color: #ffffd0;
 }
+
+li {
+    margin-bottom: 10px; /* Adjust the value as needed */
+}
