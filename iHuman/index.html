@@ -19,6 +19,21 @@
     <script src="./static/js/bulma-carousel.min.js"></script>
     <script src="./static/js/bulma-slider.min.js"></script>
     <script src="./static/js/index.js"></script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0DDYHLTT5S"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'G-0DDYHLTT5S');
+    </script>
+    <!-- End of Google tag -->
 </head>
 
 <!-- cover -->
@@ -46,12 +61,14 @@
 
                         <div class="row justify-content-center">
                             <div class="column">
-                                <p class="mb-5"><a class="btn btn-large btn-light" href="https://arxiv.org/abs/2407.11174"
+                                <p class="mb-5"><a class="btn btn-large btn-light"
+                                                   href="https://arxiv.org/abs/2407.11174"
                                                    role="button" target="_blank">
                                     <i class="fa fa-file"></i> Paper</a></p>
                             </div>
                             <div class="column">
-                                <p class="mb-5"><a class="btn btn-large btn-light" href="https://github.com/pramishp/ihuman" role="button"
+                                <p class="mb-5"><a class="btn btn-large btn-light"
+                                                   href="https://github.com/pramishp/ihuman" role="button"
                                                    target="_blank">
                                     <i class="fab fa-github"></i> Code (Improving) </a></p>
                             </div>
@@ -135,14 +152,14 @@
     <div class="container">
         <div class="row">
             <div class="col-12 text-center">
-<!--                <h2>High Fidelity 3D Mesh Reconstruction</h2>-->
+                <!--                <h2>High Fidelity 3D Mesh Reconstruction</h2>-->
                 <hr style="margin-top:0px">
-                 <video width="100%" playsinline="" autoplay="autoplay" loop="loop" preload="" muted="">
+                <video width="100%" playsinline="" autoplay="autoplay" loop="loop" preload="" muted="">
                     <source src="./static/videos/result_on_people_snapshot.mp4" type="video/mp4">
                 </video>
-<!--                <p class="text-center">-->
-<!--                    iHuman produces high fidelity mesh even capturing subtle facial details like hair, ear in 15 seconds of computational budget.-->
-<!--                <p class="text-left">-->
+                <!--                <p class="text-center">-->
+                <!--                    iHuman produces high fidelity mesh even capturing subtle facial details like hair, ear in 15 seconds of computational budget.-->
+                <!--                <p class="text-left">-->
             </div>
         </div>
     </div>
@@ -153,9 +170,10 @@
             <div class="col-12 text-center">
                 <h2>Comparison of geometric fidelity with other methods</h2>
                 <hr style="margin-top:0px">
-                    <img width="50%" src="./static/images/comparison.png" type="image">
+                <img width="50%" src="./static/images/comparison.png" type="image">
                 <p class="text-center">
-                    Fig: iHuman produces high fidelity mesh even capturing subtle facial details like hair, ear in 15 seconds of computational budget.
+                    Fig: iHuman produces high fidelity mesh even capturing subtle facial details like hair, ear in 15
+                    seconds of computational budget.
                 <p class="text-left">
             </div>
         </div>
@@ -181,9 +199,26 @@
                 </div>
                 <br>
 
-                 <div class="method-description">
-                        <p class="match-description">Our method represents the human body in canonical space with gaussians parameterized by 3D gaussian centers <span class="math">x</span>, rotations <span class="math">q</span>, scales <span class="math">S</span>, opacity <span class="math">α<sub>o</sub></span>, colors <span class="math">SH</span>, skinning weight <span class="math">w</span> and its associated parent triangle <span class="math">i<sub>x</sub></span>. It takes body pose (<span class="math">θ<sub>t</sub></span>) of <span class="math">t<sup>th</sup></span> frame as input and applies forward linear blend skinning to transform <span class="math">v'</span> to posed space <span class="math">v<sub>p</sub></span>. We compute gaussian center <span class="math">x</span> from the posed space vertices <span class="math">v<sub>p</sub></span> of <span class="math">i<sub>x</sub></span>. The normal of parent triangle <span class="math">i<sub>x</sub></span> is encoded to <span class="math">SH<sub>n&#770</sub></span> and rasterized to obtain the normal map <span class="math">I<sub>n&#770</sub></span>. Then, we apply photometric loss and normal map loss to recover both geometry and color. The GT normal map (<span class="math">Ī<sub>n&#770</sub></span>) is obtained from monocular RGB image (<span class="math">I<sub>t</sub></span>) using pix2pixHD <a href="#wang2018high">[Wang et al., 2018]</a> network.</p>
-                    </div>
+                <div class="method-description">
+                    <p class="match-description">Our method represents the human body in canonical space with gaussians
+                        parameterized by 3D gaussian centers <span class="math">x</span>, rotations <span
+                                class="math">q</span>, scales <span class="math">S</span>, opacity <span
+                                class="math">α<sub>o</sub></span>, colors <span class="math">SH</span>, skinning weight
+                        <span class="math">w</span> and its associated parent triangle <span class="math">i<sub>x</sub></span>.
+                        It takes body pose (<span class="math">θ<sub>t</sub></span>) of <span
+                                class="math">t<sup>th</sup></span> frame as input and applies forward linear blend
+                        skinning to transform <span class="math">v'</span> to posed space <span
+                                class="math">v<sub>p</sub></span>. We compute gaussian center <span
+                                class="math">x</span> from the posed space vertices <span
+                                class="math">v<sub>p</sub></span> of <span class="math">i<sub>x</sub></span>. The normal
+                        of parent triangle <span class="math">i<sub>x</sub></span> is encoded to <span
+                                class="math">SH<sub>n&#770</sub></span> and rasterized to obtain the normal map <span
+                                class="math">I<sub>n&#770</sub></span>. Then, we apply photometric loss and normal map
+                        loss to recover both geometry and color. The GT normal map (<span
+                                class="math">Ī<sub>n&#770</sub></span>) is obtained from monocular RGB image (<span
+                                class="math">I<sub>t</sub></span>) using pix2pixHD <a href="#wang2018high">[Wang et al.,
+                            2018]</a> network.</p>
+                </div>
             </div>
         </div>
     </div>
@@ -199,9 +234,9 @@
                 <!--            <div align="center"> For an unseen objects, we can simply take. </div>-->
 
                 <div class="row" style="margin-bottom:5px">
-                     <video width="100%" playsinline="" autoplay="autoplay" loop="loop" preload="" muted="">
-                    <source src="./static/videos/novel_pose.mp4" type="video/mp4">
-                </video>
+                    <video width="100%" playsinline="" autoplay="autoplay" loop="loop" preload="" muted="">
+                        <source src="./static/videos/novel_pose.mp4" type="video/mp4">
+                    </video>
 
                 </div>
                 <br>
