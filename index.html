@@ -1,12 +1,19 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Pramish Paudel</title>
     <meta name="author" content="Pramish Paudel">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <meta name="description" content="Pramish Paudel is a researcher at INSAIT working on AI models that learn an accurate representation of the dynamic world from video: objects, object permanence and world models.">
+    <meta property="og:title" content="Pramish Paudel">
+    <meta property="og:description" content="Researcher at INSAIT. Object-centric representations, object permanence and world models from video.">
+    <meta property="og:image" content="https://pramishp.github.io/images/pramish_eccv2024.jpg">
+    <meta property="og:url" content="https://pramishp.github.io/">
+    <link rel="icon" href="images/favicon/favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="apple-touch-icon" href="images/favicon/apple-touch-icon.png">
+    <link rel="stylesheet" href="stylesheet.css">
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-0DDYHLTT5S"></script>
     <script>
@@ -23,225 +30,253 @@
 </head>
 
 <body>
-<table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-    <tbody>
-    <tr style="padding:0px">
-        <td style="padding:0px">
-            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-                <tbody>
-                <tr style="padding:0px">
-                    <td style="padding:2.5%;width:63%;vertical-align:middle">
-                        <p class="name" style="text-align: center;">
-                            Pramish Paudel
-                        </p>
-                        <p>At INSAIT (Sofia), I work with Prof. Luc Van Gool, Dr. Danda Pani Paudel, and Dr. Ajad Chhatkuli to build a Jarvis-like XR copilot for aircraft maintenance—an assistant that sees what a technician sees, understands tools/parts and context, verifies each SOP step in real time, and leaves audit-ready evidence.
-                        </p>
-                        <b>Currently:</b> Building an AR verification co-pilot for aircraft maintenance that watches each step against standard operating procedures in real-time and produces tamper-evident audit trails; piloting integrations with MRO systems (e.g., AMOS) and head-worn devices.
-                        <p>
-                            <b>My long-term goal:</b> To create AI models (accurate representation of our complex, 3D and dynamic world) that can teach any concept to any person
-                            through any modality, thereby making learning anything universally accessible and transformative.
-                        </p>
-
-                        <p style="text-align:center">
-                            Email: pramish[dot]paudel[at]gmail[dot]com &nbsp;/&nbsp;
-                            <!--                            <a href="data/PramishPaudel-bio.txt">Bio</a> &nbsp;/&nbsp;-->
-                            <a href="https://scholar.google.com/citations?user=iNXzOm0AAAAJ">Scholar</a> &nbsp;/&nbsp;
-                            <!--                  <a href="https://twitter.com/jon_barron">Twitter</a> &nbsp;/&nbsp;-->
-                            <a href="https://github.com/pramishp/">Github</a>
-                        </p>
-                    </td>
-                    <td style="padding:2.5%;width:40%;max-width:40%">
-                        <a href="images/PramishPaudel.jpg"><img
-                                style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;"
-                                alt="profile photo" src="images/PramishPaudel.jpg" class="hoverZoomLink"></a>
-                    </td>
-                </tr>
-                </tbody>
-            </table>
-            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-                <tbody>
-                <tr>
-                    <td style="padding:20px;width:100%;vertical-align:middle">
-                        <h2>Publications</h2>
-                        <p>
-                            <!--                  I'm interested in computer vision, deep learning, generative AI, and image processing. Most of my research is about inferring the physical world (shape, motion, color, light, etc) from images, usually with radiance fields. Some papers are <span class="highlight">highlighted</span>.-->
-                        </p>
-                    </td>
-                </tr>
-                </tbody>
-            </table>
-            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-                <tbody>
-                <tr onmouseout="nuvo_stop()" onmouseover="nuvo_start()">
-                    <td style="padding:5px;width:25%;vertical-align:middle">
-                        <div class="one">
-                            <div class="two" id='nuvo_image'>
-                                <video width=100% muted autoplay loop>
-                                    <source src="videos/ihuman_video.mp4" type="video/mp4">
-                                    Your browser does not support the video tag.
-                                </video>
-                            </div>
-                            <img src='images/ihuman.png' width=100%>
-                        </div>
-                        <script type="text/javascript">
-                            function nuvo_start() {
-                                document.getElementById('nuvo_image').style.opacity = "1";
-                            }
-
-                            function nuvo_stop() {
-                                document.getElementById('nuvo_image').style.opacity = "0";
-                            }
-
-                            nuvo_stop()
-                        </script>
-                    </td>
-                    <td style="padding:20px;width:75%;vertical-align:middle">
-                        <a href="iHuman/index.html">
-                            <span class="papertitle">iHuman: Instant Animatable Digital Humans From Monocular Videos</span>
-                        </a>
-                        <br>
-                        <a href="https://pramishp.github.io/"> <strong>Pramish Paudel</strong></a>,
-                        <a href="iHuman/index.html">Anubhav Khanal</a>,
-                        Danda Pani Paudel,
-                        Jyoti Tandukar,
-                        <a href="https://ajadchhatkuli.github.io">Ajad Chhatkuli</a>
-                        <br>
-                        <b><em>ECCV</em>, 2024 </b>
-                        <br>
-                        <a href="iHuman/index.html">project page</a>
-                        /
-                        <a href="https://youtu.be/W5xG2GYfUM0">video</a>
-                        /
-                        <a href="https://arxiv.org/abs/2407.11174">arXiv</a>
-                        <p></p>
-                        <p>
-                            iHuman lets you reconstruct high fidelity 3D Gaussian Splats and 3D Mesh from monocular
-                            video of moving humans.
-                        </p>
-                    </td>
-                </tr>
-                </tbody>
-            </table>
-            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-                <tbody>
-                <tr>
-                    <td style="padding:20px;width:100%;vertical-align:middle">
-                        <h2>Awards and Honors</h2>
-                        <ul>
-                            <li><strong>Summer Undergraduate Research Fellowship, INSAIT:</strong> Selected in INSAIT's
-                                prestigious Summer Research Fellowship for undergraduate students all over the world
-                                with <b>acceptance rate as low as 3%.</b></li>
-                            <li><strong>Hult Prize Global Accelerator 2022, Boston, US:</strong> Reached to top 16 teams
-                                worldwide competing over 30K teams with my startup MeasureMe.AI.
-                            </li>
-                            <li><strong>Huawei Seeds for the Future 2022:</strong> Recognized as one of the top 7
-                                computer science talents nationwide.
-                            </li>
-                            <li><strong>Start-up Seed Fund Grant Recipient, 2023:</strong> Secured <b>NPR 3.2
-                                Million</b> as a startup running fund for my college department through my startup.
-                            </li>
-                            <li><strong>Microsoft Imagine Cup 2022:</strong> Represented South Asia at the Asia
-                                Regionals.
-                            </li>
-                            <li><strong>ICT Award 2023:</strong> Finalist among Nepal’s top twelve innovators.</li>
-                            <li><strong>Hack A Week 2018, 2019:</strong> First place in AI-themed hackathon at LOCUS.
-                            </li>
-                            <li><strong>KU IT MEET 2019:</strong> Winner of the hackathon hosted by Kathmandu
-                                University.
-                            </li>
-                            <li><strong>Glocals’ 20 Under 20, 2017:</strong> Honored for driving notable societal change
-                                through IT.
-                            </li>
-                        </ul>
-                    </td>
-                </tr>
-                </tbody>
-            </table>
-            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-                <tbody>
-                <tr>
-                    <td style="padding:20px;width:100%;vertical-align:middle">
-                        <h2>Projects</h2>
-                        <ul>
-                            <li><strong>[2019] Radiograph Abnormality Detection (RAD):</strong> Developed an X-ray image
-                                abnormality detection system that excelled in competitions, winning first place at KU IT
-                                MEET 2019 and Locus 2019 AI hackathons.
-                            </li>
-                            <li><strong>[2018] VAE GAN Anime Image Colorizer:</strong> Created an image colorization
-                                tool that won the Locus 2018 national level hackathon while still in high school.
-                            </li>
-                            <li><strong>[2021] <a href="https://github.com/NisharArjyal/MathematicalToolkit">AutoDiff
-                                Package:</a></strong> Built a C++ package for automatic differentiation using dual
-                                numbers.
-                            </li>
-                            <li><strong>[2022] <a href="https://github.com/pramishp/blockchain_from_scratch">Blockchain
-                                from Scratch:</a></strong> Developed a blockchain system focusing on proof of work
-                                algorithms, enhancing understanding of blockchain fundamentals.
-                            </li>
-                            <li><strong>[2020] Vicaaya - Movie Search Engine:</strong> Developed a movie search engine
-                                using Elasticsearch for search capabilities. Engineered Scrapy scraper to scrape 100M+
-                                items throughout the internet with very coordinated distributed instances.
-                            </li>
-                            <li><strong>[2017] Carduino:</strong> Designed a mini self-driving car model utilizing
-                                smartphone camera and ultrasonic sensors, awarded at the Trinity SciTech Expo.
-                            </li>
-                            <li><strong>[2016] Proto News / Khabar Sanjal:</strong> Created a news app for Nepalese
-                                abroad at age 15, reaching over 20,000 downloads.
-                            </li>
-                        </ul>
-                    </td>
-                </tr>
-                </tbody>
-            </table>
-
-    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-                <tbody>
-                <tr>
-                    <td style="padding:20px;width:100%;vertical-align:middle">
-                        <h2>Blogs</h2>
-                        <ul>
-                            <li><strong><a href="blogs/entries/first_eccv_from_nepal.html">[20 Jul 24] Behind the Scenes: The Journey to Nepal's First ECCV Paper</a></strong>
-                            <p> Discover the behind-the-scenes journey of how I and my co-author overcame numerous challenges to achieve a groundbreaking milestone in AI research with our ECCV 2024 paper, "iHuman: Instant Digital Humans From Monocular Videos."</p>
-                            </li>
-                        </ul>
-                    </td>
-                </tr>
-                </tbody>
-            </table>
-
-    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-    <tbody>
-    <tr>
-        <td style="padding:20px;width:100%;vertical-align:middle">
-            <a href="books/index.html"> <h2>Books</h2> </a>
-            <ul>
-                <li><strong><a href="books/books/the_art_of_thinking_clearly.html">[Sep 2024] The Art of Thinking Clearly - Book Summary</a></strong>
-                <p>A summary of Rolf Dobelli's insights into cognitive biases and how to recognize them for better decision-making.</p>
-                </li>
-            </ul>
-        </td>
-    </tr>
-    </tbody>
-</table>
-
-    </tbody>
-</table>
-
-
-<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-    <tbody>
-    <tr>
-        <td style="padding:0px">
-            <br>
-            <p style="text-align:right;font-size:small;">
-                The template is borrowed from <a href="https://github.com/jonbarron/jonbarron_website">Jon Barron</a>
+<main>
+    <header class="profile">
+        <div>
+            <h1>Pramish Paudel</h1>
+            <p>
+                I am a researcher at <a href="https://insait.ai/">INSAIT</a>, where I am fortunate to work with
+                <a href="https://insait.ai/prof-luc-van-gool/">Prof. Luc Van Gool</a> and
+                <a href="https://insait.ai/dr-danda-paudel/">Prof. Dr. Danda Pani Paudel</a>.
             </p>
-        </td>
-    </tr>
-    </tbody>
-</table>
-</td>
-</tr>
-</table>
+            <p>
+                I work on AI models that learn an accurate dynamic representation of the world from video and
+                use it to plan. I believe such a representation needs three properties:
+            </p>
+            <ol class="properties">
+                <li>the notion of objects emerges;</li>
+                <li>appearance and motion are disentangled;</li>
+                <li>objects persist when hidden (object permanence).</li>
+            </ol>
+            <p>
+                My latest work, <a href="https://insait-institute.github.io/iSEE/">iSEE</a>, learns all three
+                from video without labels.
+            </p>
+            <p>
+                I did my B.E. in Computer Engineering at Pulchowk Campus, Tribhuvan University, Nepal. My
+                thesis was published at ECCV 2024 as <a href="iHuman/index.html">iHuman</a>, the first-ever
+                top-tier computer vision conference paper from a Nepalese institute.
+            </p>
+            <p><strong>I am applying to PhD programs for Fall 2027.</strong></p>
+            <p class="email">E-mail: pramish<b>[dot]</b>paudel<b>[at]</b>gmail<b>[dot]</b>com</p>
+            <nav class="contact" aria-label="Profiles">
+                <a href="https://scholar.google.com/citations?user=iNXzOm0AAAAJ">Google Scholar</a>
+                <a href="https://github.com/pramishp/">GitHub</a>
+                <a href="https://www.linkedin.com/in/pramish-paudel-554b2796">LinkedIn</a>
+            </nav>
+        </div>
+        <figure class="profile-photo">
+            <img class="portrait" src="images/pramish_eccv2024.jpg" alt="Pramish Paudel at the ECCV 2024 poster session in Milan">
+        </figure>
+    </header>
+
+    <section class="publications" aria-labelledby="publications">
+        <h2 id="publications">Publications</h2>
+        <p class="legend">* equal contribution</p>
+        <ul>
+            <li class="has-preview">
+                <a class="pub-preview" href="https://insait-institute.github.io/iSEE/" tabindex="-1" aria-hidden="true">
+                    <img src="images/isee.jpg" alt="">
+                    <video src="videos/isee_video.mp4" muted loop playsinline preload="none"></video>
+                </a>
+                <div class="pub-info">
+                    <p class="pub-title">
+                        <a href="https://insait-institute.github.io/iSEE/">iSEE: Object Permanence Through Self-Supervision</a>
+                    </p>
+                    <p class="pub-authors">
+                        <strong>Pramish Paudel</strong>, Ajad Chhatkuli, Luc Van Gool, Danda Pani Paudel
+                    </p>
+                    <div class="pub-meta">
+                        <span class="pub-venue">Under review</span>
+                        <span class="pub-links">
+                            <a href="https://arxiv.org/abs/2610.01201">Paper</a>
+                            <a href="https://insait-institute.github.io/iSEE/">Project</a>
+                            <a href="https://github.com/insait-institute/iSEE">Code</a>
+                        </span>
+                    </div>
+                    <p class="pub-note">
+                        A self-supervised method that learns object permanence from video without labels; within
+                        4.1 mAP of a supervised tracker on LA-CATER.
+                    </p>
+                </div>
+            </li>
+            <li class="has-preview">
+                <a class="pub-preview" href="https://insait-institute.github.io/calit/" tabindex="-1" aria-hidden="true">
+                    <img src="images/calit.jpg" alt="">
+                </a>
+                <div class="pub-info">
+                    <p class="pub-title">
+                        <a href="https://insait-institute.github.io/calit/">Vision Transformers Need Cross Aggregation for Patch Semantics (CALiT)</a>
+                    </p>
+                    <p class="pub-authors">
+                        Ajad Chhatkuli, <strong>Pramish Paudel</strong>, Deheng Zhang, Kanzhi Wu, Luc Van Gool,
+                        Danda Pani Paudel
+                    </p>
+                    <div class="pub-meta">
+                        <span class="pub-venue">Under review</span>
+                        <span class="pub-links">
+                            <a href="https://insait-institute.github.io/calit/">Project</a>
+                        </span>
+                    </div>
+                    <p class="pub-note">
+                        A loss on the CLS token sends most ViT patches nearly the same gradient. Cross aggregation
+                        fixes this and sharpens patch features, for 0.6% extra FLOPs on ViT-S.
+                    </p>
+                </div>
+            </li>
+            <li class="has-preview">
+                <a class="pub-preview" href="https://saugat2002.github.io/iarcs/" tabindex="-1" aria-hidden="true">
+                    <img src="images/iarcs.jpg" alt="">
+                </a>
+                <div class="pub-info">
+                    <p class="pub-title">
+                        <a href="https://saugat2002.github.io/iarcs/">iARCS: Iterative Agentic RL for Controllable 3D Scene Generation</a>
+                    </p>
+                    <p class="pub-authors">
+                        <strong>Pramish Paudel*</strong>, Saugat Adhikari*, Ashok Prasad Neupane*, Ajad Chhatkuli,
+                        Danda Pani Paudel
+                    </p>
+                    <div class="pub-meta">
+                        <span class="pub-venue">Under review; presented at the Synthetic Data for Computer Vision
+                            Workshop, CVPR 2026</span>
+                        <span class="pub-links">
+                            <a href="https://arxiv.org/abs/2608.06161">Paper</a>
+                            <a href="https://saugat2002.github.io/iarcs/">Project</a>
+                            <a href="https://github.com/thenaivekid/iARCS">Code</a>
+                            <a href="https://huggingface.co/datasets/Saugat20021/iARCS">Data</a>
+                        </span>
+                    </div>
+                    <p class="pub-note">
+                        Agentic RL that steers 3D scene generators toward language-specified constraints.
+                    </p>
+                </div>
+            </li>
+            <li class="has-preview">
+                <a class="pub-preview" href="https://saugat2002.github.io/iadd/" tabindex="-1" aria-hidden="true">
+                    <img src="images/iadd.jpg" alt="">
+                </a>
+                <div class="pub-info">
+                    <p class="pub-title">
+                        <a href="https://saugat2002.github.io/iadd/">iADD: Improving Alignment and Diversity in Diffusion Policy Optimization</a>
+                    </p>
+                    <p class="pub-authors">
+                        <strong>Pramish Paudel*</strong>, Saugat Adhikari*, Ashok Prasad Neupane*, Ajad Chhatkuli,
+                        Danda Pani Paudel
+                    </p>
+                    <div class="pub-meta">
+                        <span class="pub-venue">Under review</span>
+                        <span class="pub-links">
+                            <a href="https://arxiv.org/abs/2610.01789">Paper</a>
+                            <a href="https://saugat2002.github.io/iadd/">Project</a>
+                            <a href="https://github.com/Saugat2002/iADD">Code</a>
+                        </span>
+                    </div>
+                    <p class="pub-note">
+                        RL post-training that improves both alignment and diversity of diffusion models.
+                    </p>
+                </div>
+            </li>
+            <li class="has-preview">
+                <a class="pub-preview" href="https://arxiv.org/abs/2609.16233" tabindex="-1" aria-hidden="true">
+                    <img src="images/scenebench.jpg" alt="">
+                </a>
+                <div class="pub-info">
+                    <p class="pub-title">
+                        <a href="https://arxiv.org/abs/2609.16233">SceneBench: A Hierarchical Benchmark for Vision-Language Understanding of 3D Scenes</a>
+                    </p>
+                    <p class="pub-authors">
+                        Anubhav Khanal, Prabigya Acharya, Roshni Poudel, Sujan Kapali, Bigyan Bhatta,
+                        <strong>Pramish Paudel</strong>, Francois Rameau, Danda Pani Paudel
+                    </p>
+                    <div class="pub-meta">
+                        <span class="pub-venue">Under review</span>
+                        <span class="pub-links">
+                            <a href="https://arxiv.org/abs/2609.16233">Paper</a>
+                        </span>
+                    </div>
+                    <p class="pub-note">
+                        A benchmark for vision-language understanding of 3D scenes.
+                    </p>
+                </div>
+            </li>
+            <li class="has-preview">
+                <a class="pub-preview" href="iHuman/index.html" tabindex="-1" aria-hidden="true">
+                    <img src="images/ihuman.png" alt="">
+                    <video src="videos/ihuman_video.mp4" muted loop playsinline preload="none"></video>
+                </a>
+                <div class="pub-info">
+                    <p class="pub-title">
+                        <a href="iHuman/index.html">iHuman: Instant Animatable Digital Humans From Monocular Videos</a>
+                    </p>
+                    <p class="pub-authors">
+                        <strong>Pramish Paudel</strong>, Anubhav Khanal, Danda Pani Paudel, Jyoti Tandukar,
+                        Ajad Chhatkuli
+                    </p>
+                    <div class="pub-meta">
+                        <span class="pub-venue">ECCV 2024</span>
+                        <span class="pub-links">
+                            <a href="https://arxiv.org/abs/2407.11174">Paper</a>
+                            <a href="iHuman/index.html">Project</a>
+                            <a href="https://github.com/pramishp/ihuman">Code</a>
+                            <a href="https://youtu.be/W5xG2GYfUM0">Video</a>
+                        </span>
+                    </div>
+                    <p class="pub-note">
+                        Animatable 3D human reconstruction from monocular video. My undergraduate thesis.
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <section class="awards" aria-labelledby="awards">
+        <h2 id="awards">Honors &amp; Awards</h2>
+        <ul>
+            <li>
+                <strong>INSAIT Summer Undergraduate Research Fellowship (SURF), 2024.</strong>
+                <span class="detail">Fully funded research fellowship for undergraduates worldwide; acceptance rate
+                    under 2%.</span>
+            </li>
+            <li>
+                <strong>University Grants Commission (UGC) Grant, 2023.</strong>
+                <span class="detail">Brought ~US$30K from UGC Nepal to my department for my project; one of 18
+                    recipients across Nepal.</span>
+            </li>
+            <li>
+                <strong>Hult Prize Global Accelerator, Boston, 2022.</strong>
+                <span class="detail">Won the regional summit with MeasureMe.AI and reached the top 16 of 30,000+
+                    teams competing for the US$1 million prize.</span>
+            </li>
+            <li>
+                <strong>Merit-based Scholarship, 2021.</strong>
+                <span class="detail">Awarded for one semester, Department of Electronics and Computer Engineering,
+                    Pulchowk Campus.</span>
+            </li>
+        </ul>
+    </section>
+
+    <section class="plain" aria-labelledby="service">
+        <h2 id="service">Academic Service</h2>
+        <ul class="bullets">
+            <li><strong>Reviewer</strong>: ICLR, IEEE RA-L, ACM TOMM</li>
+        </ul>
+    </section>
+</main>
+
+<script>
+    // Swap the publication still for its looping video while the row is hovered.
+    document.querySelectorAll('.has-preview').forEach(function (row) {
+        var video = row.querySelector('video');
+        if (!video) return;
+        row.addEventListener('mouseenter', function () {
+            row.classList.add('playing');
+            video.play().catch(function () {});
+        });
+        row.addEventListener('mouseleave', function () {
+            row.classList.remove('playing');
+            video.pause();
+        });
+    });
+</script>
 </body>
 </html>

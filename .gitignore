@@ -1,2 +1,4 @@
 .DS_Store
 .idea/
+# local research tracker (not for the live site)
+WORKS.md
