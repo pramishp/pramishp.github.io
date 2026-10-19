@@ -104,25 +104,6 @@ section {
   border-radius: 2px;
 }
 
-.properties {
-  margin: -6px 0 14px;
-  padding: 0;
-  list-style: none;
-  counter-reset: property;
-}
-
-.properties li {
-  position: relative;
-  padding-left: 32px;
-  counter-increment: property;
-}
-
-.properties li::before {
-  content: counter(property, lower-roman) ")";
-  position: absolute;
-  left: 4px;
-}
-
 .email b {
   font-weight: 600;
 }
